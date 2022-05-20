@@ -1,0 +1,54 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+.app {
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.app .app_content main {
+  position: relative;
+  float: left;
+  width: calc(100% - 80px);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.app .app_content main .main_deco {
+  position: absolute;
+  bottom: -35px;
+  right: -35px;
+  width: 250px;
+  height: 250px;
+  border-radius: 25px;
+  transform: rotate(30deg);
+  background-color: #2a9d8f;
+  opacity: 0.2;
+}
+
+@media screen and (max-width: 768px) {
+  .Navbar {
+    display: none;
+  }
+
+  .App {
+    width: 100%;
+  }
+  .App .info .info-box {
+    width: 90%;
+  }
+  .App .info .info-container .progress-container {
+    width: 200px;
+    margin-left: calc(50% - 100px);
+  }
+  .App .info .info-container button {
+    margin: 10px 20px 20px 20px;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */

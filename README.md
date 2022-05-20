@@ -1,2 +1,1 @@
-# G-School
-Projet PHP L2
+# school_it

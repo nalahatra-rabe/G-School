@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "Gilroy-ExtraBold";
+  src: url("../fonts/Gilroy/Gilroy-ExtraBold.otf");
+}
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("../fonts/Gilroy/Gilroy-Light.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy-ExtraBold", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-family: "Gilroy-Light", sans-serif;
+}
+
+.AjoutNotes {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.AjoutNotes .filtre {
+  width: 100%;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.02);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-family: "Gilroy-ExtraBold", sans-serif;
+  position: relative;
+}
+.AjoutNotes .filtre .btn_validation {
+  position: absolute;
+  top: 35px;
+  right: 40px;
+  border: 0;
+  background: #2a9d8f;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+  font-family: "Gilroy-ExtraBold", sans-serif;
+  padding: 8px 30px;
+}
+.AjoutNotes .filtre h4 {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+  font-family: "Gilroy-ExtraBold", sans-serif;
+}
+.AjoutNotes .filtre .filtre_items {
+  display: flex;
+  padding: 0 30px;
+}
+.AjoutNotes .filtre .filtre_items h3 {
+  padding: 0 10px;
+  font-family: "Gilroy-ExtraBold", sans-serif;
+}
+.AjoutNotes .filtre .filtre_items select {
+  padding: 0 20px;
+  font-family: "Gilroy-ExtraBold", sans-serif;
+}
+.AjoutNotes .notes {
+  width: 100%;
+  height: calc(100% - 100px);
+  padding: 2%;
+}
+.AjoutNotes .notes .search {
+  position: relative;
+}
+.AjoutNotes .notes .search i {
+  position: absolute;
+  top: -1px;
+  left: 10px;
+  z-index: 1;
+  color: #ddd;
+}
+.AjoutNotes .notes .search input {
+  padding: 12px 20px 12px 40px;
+  width: 350px;
+  font-size: 14px;
+  outline: 0;
+  font-family: "Gilroy-ExtraBold";
+  transition: all 0.5s ease-in-out;
+  border: 1px solid #ddd;
+  transform: translateY(-15px);
+}
+.AjoutNotes .notes .search input:focus {
+  border: 1px solid #2a9d8f;
+}
+.AjoutNotes .notes .heading_table {
+  border-collapse: collapse;
+  /* Collapse borders */
+  width: 100%;
+  /* Full-width */
+  border: 1px solid #ddd;
+  /* Add a grey border */
+  font-size: 18px;
+  /* Increase font-size */
+  overflow-y: auto;
+  max-height: inherit;
+}
+.AjoutNotes .notes .heading_table tr th {
+  background: #2a9d8f;
+  color: #fff;
+  font-family: "Gilroy-ExtraBold", sans-serif;
+}
+.AjoutNotes .notes .heading_table tr .matricule {
+  width: 190px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.AjoutNotes .notes .heading_table tr .note {
+  width: 150px;
+}
+.AjoutNotes .notes .all_notes {
+  width: 100%;
+  height: 90%;
+  overflow-y: auto;
+}
+.AjoutNotes .notes .all_notes table {
+  border-collapse: collapse;
+  /* Collapse borders */
+  width: 100%;
+  /* Full-width */
+  border: 1px solid #ddd;
+  /* Add a grey border */
+  font-size: 18px;
+  /* Increase font-size */
+  overflow-y: auto;
+  max-height: inherit;
+}
+.AjoutNotes .notes .all_notes table .etu_note td {
+  padding: 15px 0;
+}
+.AjoutNotes .notes .all_notes table .etu_note td:nth-child(1) {
+  text-align: center;
+  font-family: "Gilroy-Light", sans-serif;
+}
+.AjoutNotes .notes .all_notes table .etu_note td:nth-child(2) {
+  padding: 0 0 0 40px;
+}
+.AjoutNotes .notes .all_notes table .etu_note td:nth-child(3) {
+  text-align: center;
+  width: 100px;
+}
+.AjoutNotes .notes .all_notes table .etu_note td input {
+  text-align: center;
+  font-size: 17px;
+  border: 0;
+  width: 150px;
+}
+
+/*# sourceMappingURL=add_notes.css.map */
